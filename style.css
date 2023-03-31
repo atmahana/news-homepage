@@ -45,6 +45,10 @@ body{
     color: var(--clr-neutral-500);
     margin: 1rem;
     max-width: 69.375rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    
 }
 button{
     border: 0;
@@ -69,7 +73,8 @@ li{
 .article__popular{
     flex-flow: column;
     gap: 2rem;
-    margin-block: 2rem 4rem;
+    margin-block: 2rem 5.0625rem;
+    grid-area: article__popular;
 }
 .flex-group{
     gap: 1rem;
@@ -79,7 +84,7 @@ li{
     justify-content: space-between;
     width: 100%;
     padding: 2rem 0.25rem;
-    display: none;
+    /* display: none; */
 }
 .navbar__links{
     display: flex;
@@ -124,9 +129,6 @@ a:hover{
     font-size: var(--fs-18);
     font-weight: var(--fw-700);
 }
-.article__popular{
-    grid-area: article__popular;
-}
 .flex-group > img{ 
     width: 6.25rem;
 }
@@ -158,6 +160,9 @@ a:hover{
         "article__popular article__popular article__popular";
     }
     .flex-group{
+        flex-flow: row;
+    }
+    .article__popular{
         flex-flow: row;
     }
 }
