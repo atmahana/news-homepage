@@ -23,44 +23,52 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <img class="logo" src="assets/images/logo.svg" alt="News page logo with the letter W">
-    <ul class="navbar__links">
-      <li class="navbar__item"><a href="">Home</a></li>
-      <li class="navbar__item"><a href="">New</a></li>
-      <li class="navbar__item"><a href="">Popular</a></li>
-      <li class="navbar__item"><a href="">Trending</a></li>
-      <li class="navbar__item"><a href="">Categories</a></li>
-    </ul>
-  </nav>
-  <main class="wrapper">
-    <article class="article__main">
-      <picture>
-        <source media="(min-width: 48rem)" srcset="assets/images/image-web-3-desktop.jpg">
-        <img src="assets/images/image-web-3-mobile.jpg" alt="Main news image">
-      </picture>
-      <h1>The Bright Future of Web 3.0?</h1>
-      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-      <button>READ MORE</button>
-    </article>
-    <article class="articles__new">
-      <span>New</span>
-      <div class="new__item">
-        <h2 class="articles__title"><a href="">Hydrogen VS Electric Cars</a></h2>
-        <div class="article__summary">Will hydrogen-fueled cars ever catch up to EVs?</div>
-      </div>
-      <div class="new__item">
-        <h2 class="articles__title"><a href="">The Downsides of AI Artistry</a></h2>
-        <div class="article__summary">What are the possible adverse effects of on-demand AI image generation?</div>
-      </div>
-      <div class="new__item">
-        <h2 class="articles__title"><a href="">Is VC Funding Drying Up?</a></h2>
-        <div class="article__summary">Private funding by VC firms is down 50% YOY. We take a look at what that means.
+  <div class="container">
+    <header>
+      <img class="logo" src="assets/images/logo.svg" alt="News page logo with the letter W">
+      <button class="menu-toggle" aria-controls="navbar__links" aria-expanded="false"></button>
+      <nav class="navbar">
+        <ul class="navbar__links" data-visible="false">
+          <li class="navbar__item"><a href="">Home</a></li>
+          <li class="navbar__item"><a href="">New</a></li>
+          <li class="navbar__item"><a href="">Popular</a></li>
+          <li class="navbar__item"><a href="">Trending</a></li>
+          <li class="navbar__item"><a href="">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <div class="article__main">
+        <picture>
+          <source media="(min-width: 36em)" srcset="assets/images/image-web-3-desktop.jpg">
+          <img src="assets/images/image-web-3-mobile.jpg" alt="Main news image">
+        </picture>
+        <div class="flex-group">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="flex-group">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the people. But is it really fulfilling its promise?</p>
+            <button>READ MORE</button>
+          </div>
         </div>
       </div>
-    </article>
-    <article class="article__popular">
-      <div class="item-1">
+      <div class="articles__new">
+        <h2>New</h2>
+        <div class="new__item">
+          <h3 class="articles__title"><a href="">Hydrogen VS Electric Cars</a></h3>
+          <p class="article__summary">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="new__item">
+          <h3 class="articles__title"><a href="">The Downsides of AI Artistry</a></h3>
+          <p class="article__summary">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="new__item">
+          <h3 class="articles__title"><a href="">Is VC Funding Drying Up?</a></h3>
+          <p class="article__summary">Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </p>
+        </div>
+      </div>
+      <div class="article__popular">
         <div class="flex-group">
           <img src="assets/images/image-retro-pcs.jpg" alt="Retro PC that looks like a very old macintosh machine"
             class="article__img">
@@ -70,8 +78,6 @@
             <p class="article__summary">What happens when old PCs are given modern upgrades?</p>
           </div>
         </div>
-      </div>
-      <div class="item-2">
         <div class="flex-group">
           <img src="assets/images/image-top-laptops.jpg" alt="Retro PC that looks like a very old macintosh machine"
             class="article__img">
@@ -81,8 +87,6 @@
             <p class="article__summary">Our best picks for various needs and budgets.</p>
           </div>
         </div>
-      </div>
-      <div class="item-3">
         <div class="flex-group">
           <img src="assets/images/image-gaming-growth.jpg" alt="Retro PC that looks like a very old macintosh machine"
             class="article__img">
@@ -93,12 +97,13 @@
           </div>
         </div>
       </div>
-    </article>
-  </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/adhamAR/news-homepage" target="_blank">Zubair Adham</a>.
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/adhamAR/news-homepage" target="_blank">Zubair Adham</a>.
+    </div>
   </div>
 </body>
+<script src="script.js"></script>
 
 </html>
